@@ -1,0 +1,25 @@
+.footer{
+    background-color: var(--bgColor);
+    /* background-color: red; */
+    height:70rem;
+    width: 100%;
+    overflow: hidden;
+}
+.footer-img-bg{
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+    background: url(../../Assets/footerbg.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: var(--bgColor);
+    background-repeat: no-repeat;
+    background-position-y: 15rem;
+    display: none;
+    /* filter: hue-rotate(50deg) saturate(300%) brightness(40%) contrast(130%); */
+}
+@media screen and (max-width:500px){
+    .footer-img-bg{
+        display: flex;
+    }
+}

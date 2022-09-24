@@ -1,0 +1,46 @@
+.quote{
+    width: 100%;
+    height: 47rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden!important;
+    /* background: url('../../Assets/arrow.png'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--bgColor);
+    
+}
+.quote p{
+    overflow: hidden;
+    /* background-color: rgba(0, 0, 0, 0.807); */
+    background-color: var(--bgColor);
+    font-size: 2rem;
+    font-family: 'oswald';
+    text-transform: uppercase;
+    line-height: 2.2rem;
+    color: #feffff;
+    z-index: 2;
+    padding: 5px 75px;
+}
+.quote img{
+    position: absolute;
+    height: 20rem;
+    left: 45%;
+    overflow: visible;
+    z-index: 1;
+}
+@media screen and (max-width:371px) {
+    .quote img{
+        position: absolute;
+        height: 19rem;
+        left: 15%;
+        z-index: 1;
+    }
+    .quote p{
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        padding: 0 20px;
+    }
+}

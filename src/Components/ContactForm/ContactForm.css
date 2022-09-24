@@ -1,0 +1,102 @@
+.contact-form{
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bgColor);
+}
+.form-title{
+    width: 100%;
+    height: 3.6rem;
+    /* display: flex; */
+    justify-content: center;
+    /* margin-left: 2rem; */
+    margin-bottom: 1em;
+    /* padding-left: 1.5rem; */
+    font-weight: bold;
+    align-items: center;
+    color: #1a1a1d;
+    background-color: #feffff;
+    font-family: 'canopee';
+    font-size: 3rem;
+    display: none;
+}
+.contact-form form{
+    transform: scale(1.2);
+    position: relative;
+    left: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form form input{
+    height: 3rem;
+    z-index: 100;
+    width: 20rem;
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-family: 'lato';
+    padding: 0 10px;
+    background-color: transparent;
+    border: 2px dotted #d4d4d4;
+    color: #feffff;
+}
+.contact-form form textarea{
+    height: 8.5rem;
+    width: 20rem;
+    z-index: 100;
+    border: 2px dotted #feffff;
+    background-color: transparent;
+    color: red;
+    font-size: 1.2rem;
+    font-family: 'lato';
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.submit-btn{
+    background-color: #feffff;
+    color: #1a1a1d;
+    font-weight: bold;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    border: none;
+    z-index: 100;
+
+    outline: none;
+    /* box-shadow: 0 0 5px #ff1818; */
+    font-family: 'canopee';
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.form-title-2{
+    position: relative;
+    width: 40rem;
+    height: 5rem;
+    /* background-color: #feffff; */
+    display: flex;
+    color: #feffff;
+    justify-content: center;
+    align-items: center;
+    font-family: 'canopee';
+    font-size: 7rem;
+    left: 3rem;
+    top: 3rem;
+}
+@media screen and (max-width:500px) {
+    .form-title{
+        display: flex;
+    }
+    .form-title-2{
+        display: none;
+    }
+    .contact-form form{
+        transform: scale(1);
+        left: 0;
+    }
+}

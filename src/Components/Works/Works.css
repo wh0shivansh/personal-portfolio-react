@@ -1,0 +1,16 @@
+.works{
+    height: 100vh;
+    width: 100%;
+}
+.works-container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+.works-container img{
+    transform: scale(0.75);
+}

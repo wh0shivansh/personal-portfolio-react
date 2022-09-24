@@ -1,0 +1,16 @@
+.blog{
+    height: 100vh;
+    width: 100%;
+}
+.blog-container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+.blog-container img{
+    transform: scale(0.75);
+}
