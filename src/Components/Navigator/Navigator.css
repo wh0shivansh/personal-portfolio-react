@@ -6,10 +6,10 @@
     display: none;
     position: fixed!important;
     bottom: 0;
-    z-index: 2000;
+    z-index: 9999;
     height: 3.2rem;
     width: 100%;
-    background-color: var(--bgColor);
+    /* background-color: var(--bgColor); */
     /* background-color: red; */
 }
 .navigator-container{
@@ -40,10 +40,20 @@
     flex-direction: column;
     /* margin:1px .5px;     */
 }
+.navigator ul li:nth-child(5){
+    background-color: transparent;
+}.navigator ul li:nth-child(5) a{
+    color: #feffff;
+}
 
 .navigator-container ul li a{
     transform: scale(0.92);
     color: var(--bgColor);
+}
+
+.navigator-container ul li:nth-child(5) a span{
+    color: #feffff;
+    margin-bottom: 2px;
 }
 .icons{
     /* background-color: green; */

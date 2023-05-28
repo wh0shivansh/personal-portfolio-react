@@ -22,7 +22,7 @@ const ContactForm = () => {
     return (
         <div className="contact-form">
             <div className="form-title">Contact Me</div>
-            <div className="form-title-2">Contact Me</div>
+            <div className="form-title-2">Contact&nbsp;<span className='color-red'> Me</span></div>
             <form onSubmit={sendEmail} ref={form}>
                 <input type="name" placeholder='Name' name='name'/>
                 <input type="email" placeholder='Email' name='email' />

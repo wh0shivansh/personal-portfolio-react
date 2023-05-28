@@ -26,6 +26,7 @@
     position: relative;
     left: 20rem;
     display: flex;
+    z-index: 3000;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -57,8 +58,8 @@
     padding-top: 10px;
 }
 .submit-btn{
-    background-color: #feffff;
-    color: #1a1a1d;
+    background-color: goldenrod;
+    color: var(--bgColor);
     font-weight: bold;
     height: 3rem;
     width: 10rem;

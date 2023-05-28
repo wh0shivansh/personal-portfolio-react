@@ -20,7 +20,7 @@
     color: #ff1818;
     font-size: 2rem;
     cursor: pointer;
-    z-index: 100;
+    z-index: 3000;
     /* text-shadow:0 0 2px white; */
 }
 .social-icons p span{

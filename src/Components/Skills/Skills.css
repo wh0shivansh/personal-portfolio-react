@@ -9,8 +9,186 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    background-color: var(--bgColor);
 }
-.skills-container img{
-    transform: scale(0.75);
+.skills-left{
+    width: 50%;
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}.skills-right{
+    width: 50%;
+    height: 100%;
+    /* background-color: green; */
+}
+.skills-left p:nth-child(1){
+    color: goldenrod;
+    font-family: 'lato';
+    font-weight: bold;
+    font-size: 3.5rem;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 8rem;
+    margin-bottom: 2rem;
+}.skills-left p:nth-child(2){
+    font-family: 'lato';
+    color: #feffff;
+    width: 100%;
+    font-size: 18px;
+    justify-content: flex-start;
+    padding-left: 8rem;
+    margin-bottom: 1rem;
+}.skills-left p:nth-child(3){
+    font-size: 18px;
+    font-family: 'lato';
+    color: #feffff;
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 8rem;
+    padding-right: 12rem;
+    margin-bottom: 1rem;
+}.skills-left p:nth-child(4){
+    font-family: 'lato';
+    font-size: 18px;
+    color: #feffff;
+    width: 100%;
+    justify-content: flex-start;
+    padding-right: 12rem;
+    padding-left: 8rem;
+}
+.tagcloud1{
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding-left: 4rem; */
+}
+.tagcloud1 span:nth-child(2n+1){
+    color: goldenrod;
+    font-size: 1.6rem;
+}.tagcloud1 span:nth-child(2n){
+    color: #e6e6e6;
+    font-size: 1.6rem;
+}
+.skills-right div:nth-child(2){
+    display: none;
+}.skills-right div:nth-child(3){
+    display: none;
+}
+@media  screen and (max-width:1057px) {
+    .skills-container{
+        flex-direction: column-reverse;
+        height: 60rem;
+    }
+    .skills-right{
+        width: 100%;
+        height: 50%;
+    }
+    .tagcloud1{
+        justify-content: center;
+    }
+    .skills-left{
+        width: 100%;
+        padding-right: 10rem;
+    }
+}@media  screen and (max-width:623px) {
+    .skills-right{
+        width: 100%;
+        height: 50%;
+        transform: scale(0.8);
+    }
+    .tagcloud1{
+        justify-content: center;
+    }
+    .skills-left{
+        width: 100%;
+        padding-right: 10rem;
+        padding: 0;
+    }
+    .skills-left p:nth-child(1){
+        padding-left: 3rem;
+    }    .skills-left p:nth-child(2){
+        padding-left: 3rem;
+    }   .skills-left p:nth-child(3){
+        padding-left: 3rem;
+    }   .skills-left p:nth-child(4){
+        padding-left: 3rem;
+    }
+}@media  screen and (max-width:498px) {
+    .skills-container{
+        height:45rem;
+    }
+    .skills-right{
+        width: 100%;
+        height: 50%;
+        transform: scale(0.6);
+    }
+    .tagcloud1{
+        justify-content: center;
+        overflow: visible;
+        position: relative;top: -4rem;
+        align-items: flex-start;
+    }
+    .skills-left{
+        position: relative;
+        top: -2rem;
+        width: 100%;
+        padding-right: 10rem;
+        padding: 0;
+        transform: scale(0.7);
+    }
+    .skills-left p:nth-child(1){
+        padding-left: 1rem;
+        padding-right: 0;
+    }    .skills-left p:nth-child(2){
+        padding-left: 1rem;
+        padding-right: 0;
+    }   .skills-left p:nth-child(3){
+        padding-left: 1rem;
+        padding-right: 0;
+    }   .skills-left p:nth-child(4){
+        padding-left: 1rem;
+        padding-right: 0;
+    }
+}@media  screen and (max-width:371px) {
+    .skills-container{
+        height:45rem;
+    }
+    .skills-right{
+        width: 100%;
+        height: 50%;
+        transform: scale(0.5);
+    }
+    .tagcloud1{
+        justify-content: center;
+        overflow: visible;
+        position: relative;top: -4rem;
+        align-items: flex-start;
+        z-index: 10000;
+    }
+    .skills-left{
+        position: relative;
+        top: -2rem;
+        width: 100%;
+        padding-right: 10rem;
+        padding: 0;
+        transform: scale(0.7);
+    }
+    .skills-left p:nth-child(1){
+        padding-left: 0;
+    }    .skills-left p:nth-child(2){
+        padding-left: 0;
+    }   .skills-left p:nth-child(3){
+        padding-left: 0;
+    }   .skills-left p:nth-child(4){
+        padding-left: 0;
+    }
 }

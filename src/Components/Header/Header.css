@@ -24,28 +24,50 @@ header{
     /* background-color: green; */
     /* border: 1px solid white; */
     margin-right: 5rem;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 3000;
+    cursor: pointer;
+    display: flex;
+}
+.hamburger-black{
+    background-color: #1a1a1dd9;
+}
+.hamburger-white{
+    background-color: #feffff;
+    transition: .6s ease-in-out;
 }
 .hamburger div:nth-child(1){
     height: 2px;
     width: 100%;
-    background-color:white;
     /* box-shadow:0 0 8px purple; */
 }
+.ham1{
+    transform: rotate(35deg);
+    top: 16px;
+    position: relative;
+    transition: .6s ease-in-out;
+}.ham3{
+    transform: rotate(-35deg);
+    top: -16px;
+    transition: .6s ease-in-out;
+    left: 4px;
+    position: relative;
+}
+.ham2{
+    opacity: 0;
+}
+
 .hamburger div:nth-child(2){
     height: 2px;
     width: 100%;
     margin-top: 14px;
-    background-color: white;
 }
 .hamburger div:nth-child(3){
     height: 2px;
     margin-top: 14px;
     width: 100%;
-    background-color: white;
 }
 .menu img{
     height: 100%;
@@ -126,6 +148,60 @@ header{
     transform: rotate(-40deg);
     transition: 0.5s ease-in-out;
 }
+.nav-open{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    width: 100%;
+    background-color: #d4d4d4;
+    z-index: 2000;
+    transition: .5s ease-in-out;
+    opacity: 1;
+}
+.nav-close{
+    top: -100%;
+    transition: .5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #d4d4d4;
+    z-index: 2000;
+}
+.nav-item{
+    /* background-color: red; */
+    height: calc(100% - 8rem);
+    width: 100%;
+}
+.nav-item p:nth-child(1) a,
+.nav-item p:nth-child(2) a,
+.nav-item p:nth-child(3) a{
+    color: #313131;
+    font-family: 'canopee';
+    font-size: 8rem;
+}
+.current-line{
+    background-color: #808080e3;
+    width: 24rem;
+    height: 14px;
+    position: absolute;
+    top: 12rem;
+    left: 36rem;
+}
+.nav-item p:nth-child(4) a{
+    color: #1a1a1d;
+    font-family: 'editorial';
+    text-transform: capitalize;
+    position: relative;
+    bottom: -5rem;
+}
+
+
 .display-none-music{
     transition: 0.5s ease-in-out;
     transform: rotate(0deg) scale(0);
